@@ -4,6 +4,8 @@ var ViewModel = function() {
 	this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
 	this.imgAttribution = ko.observable('http://www.flicker.com/photos/');
 	this.level = ko.observable('Newborn');
+	this.nicknames = ko.observable(['Tabtab','T-Bone','Mr. T','Tabitha Tab Tabby Catty Cat']);
+	
 	this.incrementCounter = function() {
 		this.clickCount(this.clickCount()+1);
 		if (this.clickCount()>10) {
@@ -12,7 +14,7 @@ var ViewModel = function() {
 		if (this.clickCount()>30) {
 			this.level('Teen');
 		}
-	};
+	}; // end incrementCounter
 }
 
 ko.applyBindings(new ViewModel())
