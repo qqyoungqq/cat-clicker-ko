@@ -2,7 +2,7 @@
 Mini project of Udacity course "JavaScript Design Patterns"
 
 ### Project Overview
-The application is build on Model-View-View Model (MVVM) pattern using Knockout
+The application is build on Model-View-View Model (MVVM) pattern using [Knockout] (http://knockoutjs.com/index.html)
 
 The application should display:
 * a list of cats by name
