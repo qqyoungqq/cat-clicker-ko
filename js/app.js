@@ -62,7 +62,6 @@ var Cat = function(data) {
 	}, this); // end level
 } // end Cat
 
-// Make the cats show up in a list
 // Make the currentCat change when you click on a cat in the list
 
 /* ViewModel */
@@ -82,6 +81,9 @@ var ViewModel = function() {
 		self.currentCat().clickCount(self.currentCat().clickCount()+1);
 	}; // end incrementCounter
 
+	this.setCurrentcat = function(clickedCat) {
+		self.currentCat(clickedCat);
+	}; // end setCurrentcat
 } // end ViewModel
 
 ko.applyBindings(new ViewModel())
